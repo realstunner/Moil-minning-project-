@@ -35,7 +35,7 @@ Execution: Evaluates operational metrics against target output to calculate fore
 3. Module 03: Field Verification & Audit Checklist
 Persistent local tracking system allowing field geologists to log, review, and synchronize daily safety and resource verification audits directly to the offline MongoDB database.
 
-https://github.com/realstunner/Moil-minning-project-/blob/main/Screenshot%202026-09-09%20195229.png
+![Dashboard Preview](https://github.com/realstunner/Moil-minning-project-/blob/main/Screenshot%202026-09-09%20195229.png)
 
 ⚙️ Local Installation & Quick Start
 To run this complete intelligence platform locally on your machine, follow these steps:
