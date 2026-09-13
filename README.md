@@ -76,4 +76,4 @@ npm install
 npm run dev
 Open http://localhost:3000 in your browser to access the live platform command center.
 
-![Dashboard Preview](https://github.com/realstunner/Moil-minning-project-/blob/main/Screen%20Recording%202026-09-13%20162511.mp4)
+[![MOIL Platform Demo Video](https://github.com/realstunner/Moil-minning-project-/blob/main/Screen%20Recording%202026-09-13%20162511.mp4)
