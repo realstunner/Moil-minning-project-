@@ -6,7 +6,7 @@ In the remote, disconnected depths of modern mining pits, cloud-dependent AI is 
 
 The MOIL AI Mining Intelligence Platform is a full-stack, enterprise-grade edge computing solution engineered specifically for raw field deployment. It fuses high-performance Machine Learning with a deterministic 100-Point Operational Risk Engine, transforming raw geological and telemetry inputs into instant, actionable field directives—all running locally on a standard machine without an active internet handshake.
 
-#🛠️ System Architecture & Technology Stack
+🛠️ System Architecture & Technology Stack
 Built with a high-performance, decoupled local-first architecture designed for zero latency and absolute data sovereignty:
 
 Frontend (Command Center): Next.js (React), Tailwind CSS, and interactive dynamic Leaflet mapping for real-time field visualization.
@@ -17,7 +17,7 @@ Machine Learning Core: Scikit-Learn, XGBoost, and Random Forest compiled into ul
 
 Database Infrastructure: Local MongoDB instance (port 27017) for persistent, offline storage of field verification checklists and operational audit logs.
 
-#🔥 Core Modules & Features
+🔥 Core Modules & Features
 1. Module 01: Location Prospectivity Predictor (XGBoost)
 The Needle in a Haystack Challenge: Mineral exploration is heavily imbalanced—barren land drastically outnumbers productive deposits.
 
