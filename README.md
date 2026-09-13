@@ -1,4 +1,4 @@
-MOIL AI Mining Intelligence Platform 🚀
+##MOIL AI Mining Intelligence Platform 🚀##
 An Edge-Computing, Offline-First Command Center for Manganese Prospectivity & Production Forecasting
 
 💎 Executive Overview
