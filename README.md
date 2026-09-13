@@ -1,48 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MOIL AI: Edge-Computing Mining Intelligence Platform
 
-## Getting Started
+A completely offline, local-first machine learning command center built for Manganese Prospectivity and Production Forecasting in disconnected environments.*
 
-First, run the development server:
+## The Problem
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Real-world mining pits often lack reliable cellular or internet connectivity, rendering cloud-based AI solutions entirely useless to on-ground geologists and pit managers. Companies like MOIL (Manganese Ore India Limited)—the largest producer of manganese ore in India, operating 11 underground and opencast mines—require robust operational intelligence that survives offline.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## The Architecture: Hybrid Edge Intelligence
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This platform bridges complex Machine Learning with deterministic business logic, specifically designed to run natively on a standard laptop CPU in the middle of a disconnected mine site.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+XGBoost Prospectivity Classifier:** Solves the "needle in a haystack" problem of mineral exploration. It uses sequential learning and dynamic class weighting (`scale_pos_weight`) to identify rare, non-linear geological deposit patterns from highly imbalanced spatial data.
 
-## Learn More
+Random Forest Production Regressor:** Filters out chaotic, daily operational noise (e.g., sudden weather, isolated equipment breakdowns). By averaging independent decision trees, it generates highly stable and reliable monthly production forecasts.
 
-To learn more about Next.js, take a look at the following resources:
+100-Point Deterministic Risk Engine:** Wraps the ML models in a diagnostic rule engine to instantly translate raw tonnage shortfalls into actionable, prioritized operational commands (e.g., "Schedule preventative maintenance").
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Core Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Frontend:** Next.js (React), TailwindCSS, Leaflet (Dynamic Spatial Mapping)
+Backend:** FastAPI (Python), Uvicorn (Lightning-fast local API)
+Machine Learning:** Scikit-Learn, XGBoost, GeoPandas, Joblib
+Database:** MongoDB (Local instance for offline ground-truth data persistence)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🚀 Quickstart Installation
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-Frontend setup:
+This project utilizes a decoupled edge architecture and requires two separate terminals to run.
+
+### 1. Frontend Environment
+
+Open your first terminal and start the Next.js interactive dashboard:
+
 
 npm install
 npm run dev
 
-Backend setup (in a new terminal):
+
+
+*The command center will instantly go live at `http://localhost:3000`.*
+
+### 2. Backend Environment
+
+Open a **new, completely separate terminal**, initialize the Python environment, and start the FastAPI inference server:
+
 
 python -m venv .venv
 .\.venv\Scripts\activate
-pip install fastapi uvicorn pandas numpy scikit-learn xgboost joblib pydantic
-pip install pymongo
+pip install fastapi uvicorn pandas numpy scikit-learn xgboost joblib pydantic pymongo geopandas
 python -m uvicorn backend.main:app --reload --port 8000
+
+
+
+*The machine learning API will actively listen on `http://localhost:8000`.*
+
+Database Note:** Ensure your local MongoDB Windows service is actively running on port `27017` to enable the offline Field Verification Checklist module.
