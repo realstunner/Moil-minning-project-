@@ -1,0 +1,16 @@
+# Data Manipulation & Math
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Machine Learning & Pipeline
+scikit-learn>=1.2.0
+xgboost>=2.0.0
+joblib>=1.2.0
+
+# Geospatial & Earth Engine
+geopandas>=0.13.0
+shapely>=2.0.0
+earthengine-api>=0.1.350
+
+# Explainability (Optional but great for the dashboard)
+shap>=0.42.0
